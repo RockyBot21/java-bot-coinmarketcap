@@ -1,0 +1,24 @@
+[03:16:01] INFO: Load variables in the .env file.
+[03:16:01] INFO: Create json file: /home/a/Documents/java_projects/example-bot/coins.json
+[03:16:08] INFO: Open web page url: https://coinmarketcap.com/
+[03:16:08] INFO: Check if web page load correctly.
+[03:16:25] INFO: Coin found with the name: decentraland Value: $0.1208
+[03:16:25] INFO: Coin found in the page number --> 2
+[03:16:30] INFO: Check if web page load correctly.
+[03:16:33] INFO: Search inthe next page.
+[03:16:39] INFO: Coin found with the name: virtual-protocol Value: $0.6813
+[03:16:39] INFO: Coin found in the page number --> 1
+[03:16:44] INFO: Check if web page load correctly.
+[03:16:48] INFO: Coin found with the name: lido-dao Value: $0.5866
+[03:16:48] INFO: Coin found in the page number --> 1
+[03:16:50] INFO: Check if web page load correctly.
+[03:17:07] INFO: Coin found with the name: xrp Value: $1.86
+[03:17:07] INFO: Coin found in the page number --> 1
+[03:17:11] INFO: Check if web page load correctly.
+[03:17:15] INFO: Coin found with the name: bitcoin Value: $87,701.50
+[03:17:15] INFO: Coin found in the page number --> 1
+[03:17:15] INFO: Check if web page load correctly.
+[03:17:17] INFO: Coin found with the name: ethereum Value: $2,973.67
+[03:17:17] INFO: Coin found in the page number --> 1
+[03:17:18] INFO: Write the results in json file.  Result: true
+[03:17:18] INFO: Close session in web browser.
