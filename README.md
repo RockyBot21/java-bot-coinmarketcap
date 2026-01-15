@@ -1,55 +1,45 @@
-# Java Bot CoinMarketCap (GUI Automation) 🤖🪙
+# 🪙 CoinMarketCap GUI Automation Bot
+> **High-performance Web Automation engine built with Java 21 and Maven.**
 
-Este proyecto es un bot desarrollado en **Java** diseñado para interactuar automáticamente con la interfaz gráfica de **CoinMarketCap**. El bot automatiza la navegación web para consultar datos de criptomonedas específicas y exportarlos a un archivo local en formato JSON.
+[![Java Version](https://img.shields.io/badge/Java-21-orange?style=for-the-badge&logo=openjdk)](https://www.oracle.com/java/)
+[![Maven](https://img.shields.io/badge/Build-Maven-C71A36?style=for-the-badge&logo=apache-maven)](https://maven.apache.org/)
+[![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)](https://opensource.org/licenses/MIT)
 
-## 📋 Descripción
 
-A diferencia de los bots que utilizan APIs pagas, este bot realiza **Web Automation** para extraer información directamente de la página de CoinMarketCap. Es ideal para tareas de monitoreo personalizadas y recolección de datos sin depender de los límites de una API Key gratuita.
 
-## ⚙️ Configuración del Sistema
+## 📖 Overview / Resumen
 
-El bot se parametriza totalmente a través de un archivo de variables de entorno. 
+**EN:** A sophisticated automation tool that bypasses expensive API tier limitations by interacting directly with the CoinMarketCap Web Interface. Using **Java 21**, it ensures robust performance and modern syntax for data extraction.
 
-### 1. Crear archivo .env
-Para que el bot funcione, debes crear un archivo llamado `.env` en la raíz del directorio `example-bot` con la siguiente estructura:
+**ES:** Una herramienta de automatización avanzada que evita las limitaciones de las APIs de pago mediante la interacción directa con la interfaz web de CoinMarketCap. Utiliza **Java 21** para garantizar un rendimiento robusto y una sintaxis moderna en la extracción de datos.
 
-```env
-# URL de acceso
-URL_WEB_PAGE = [https://coinmarketcap.com/](https://coinmarketcap.com/)
+---
 
-# Lista de criptomonedas a consultar (separadas por coma)
-COINS_TO_CONSULT = decentraland, virtual-protocol, lido-dao, xrp, bitcoin, ethereum
+## 🛠️ Stack Tecnológico / Tech Stack
 
-# Ruta absoluta donde se guardará el archivo generado
-PATH_JSON_FILE = /home/user/Documents/java_projects/example-bot
+### ☕ Java 21
+Hemos seleccionado la versión **LTS (Long Term Support)** más reciente de Java para aprovechar:
+* **Virtual Threads:** Optimización en la gestión de hilos para procesos de red.
+* **Modern Syntax:** Mejor legibilidad y mantenimiento del código de automatización.
 
-# Nombre del archivo de salida
-JSON_FILE_NAME = coins.json
-===============================================================================================================================================================
-# Java Bot CoinMarketCap (GUI Automation) 🤖🪙
+### 🏗️ Apache Maven
+Utilizamos Maven como motor de construcción y gestión de dependencias para:
+* **Automatización de ciclo de vida:** Compilación, testing y empaquetado estandarizado.
+* **Gestión de Dependencias:** Manejo automático de librerías como Selenium y Dotenv sin conflictos.
 
-This project is a **Java-based** bot designed to automatically interact with the **CoinMarketCap** graphical user interface. The bot automates web navigation to query data for specific cryptocurrencies and exports the results to a local JSON file.
+---
 
-## 📋 Description
+## ⚙️ Configuration / Configuración
 
-Unlike bots that rely on paid APIs, this bot performs **Web Automation** to extract information directly from the CoinMarketCap website. It is ideal for personalized monitoring tasks and data collection without being subject to the limitations of a free API Key.
-
-## ⚙️ System Configuration
-
-The bot is fully parameterized through an environment variables file.
-
-### 1. Create .env file
-For the bot to function correctly, you must create a file named `.env` in the root of the `example-bot` directory with the following structure:
+Create a `.env` file in the root directory:
 
 ```env
-# Access URL
-URL_WEB_PAGE = [https://coinmarketcap.com/](https://coinmarketcap.com/)
+# --- Connection Settings ---
+URL_WEB_PAGE=[https://coinmarketcap.com/](https://coinmarketcap.com/)
 
-# List of cryptocurrencies to consult (comma-separated)
-COINS_TO_CONSULT = decentraland, virtual-protocol, lido-dao, xrp, bitcoin, ethereum
+# --- Target Assets (Slug based) ---
+COINS_TO_CONSULT=decentraland,virtual-protocol,lido-dao,xrp,bitcoin,ethereum
 
-# Absolute path where the generated file will be saved
-PATH_JSON_FILE = /home/user/Documents/java_projects/example-bot
-
-# Output file name
-JSON_FILE_NAME = coins.json
+# --- Storage Settings ---
+PATH_JSON_FILE=/your/absolute/path/here
+JSON_FILE_NAME=coins.json
